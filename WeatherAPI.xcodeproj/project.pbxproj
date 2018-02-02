@@ -35,6 +35,7 @@
 		FF774A212024701F00CAA98E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A1E20246CF900CAA98E /* Weather.swift */; };
 		FF774A242024744A00CAA98E /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A232024744A00CAA98E /* WeatherAPIClient.swift */; };
 		FF774A26202481E900CAA98E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A25202481E900CAA98E /* Error.swift */; };
+		FF774A282024B14900CAA98E /* WeatherRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A272024B14900CAA98E /* WeatherRoutes.swift */; };
 		OBJ_1018 /* PostControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PostControllerTests.swift */; };
 		OBJ_1019 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* RouteTests.swift */; };
 		OBJ_1020 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Utilities.swift */; };
@@ -3572,6 +3573,7 @@
 		FF774A1E20246CF900CAA98E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		FF774A232024744A00CAA98E /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 		FF774A25202481E900CAA98E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		FF774A272024B14900CAA98E /* WeatherRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRoutes.swift; sourceTree = "<group>"; };
 		"Fluent::Fluent::Product" /* Fluent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fluent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FluentProvider::FluentProvider::Product" /* FluentProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FluentProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JSON::JSON::Product" /* JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4874,6 +4876,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_14 /* Routes.swift */,
+				FF774A272024B14900CAA98E /* WeatherRoutes.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -5988,7 +5991,7 @@
 			path = ".build/checkouts/engine.git-3311994267206676365/Sources/Cookies";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -5999,7 +6002,6 @@
 				OBJ_27 /* Dependencies */,
 				OBJ_756 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_503 /* WebSockets */ = {
@@ -8085,7 +8087,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_756 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -8183,6 +8185,7 @@
 				OBJ_1163 /* Post.swift in Sources */,
 				FF774A242024744A00CAA98E /* WeatherAPIClient.swift in Sources */,
 				FF774A2020246FCE00CAA98E /* WeatherController.swift in Sources */,
+				FF774A282024B14900CAA98E /* WeatherRoutes.swift in Sources */,
 				OBJ_1164 /* Routes.swift in Sources */,
 				OBJ_1165 /* Config+Setup.swift in Sources */,
 				OBJ_1166 /* Droplet+Setup.swift in Sources */,

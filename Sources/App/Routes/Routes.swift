@@ -33,7 +33,6 @@ extension Droplet {
             fatalError()
         }
         
-        let weatherController = WeatherController(self, appId: appId)
-        get("weather", handler: weatherController.weather)
+        WeatherRoutes.setupRoutes(appId: appId, droplet: self)
     }
 }

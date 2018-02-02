@@ -22,17 +22,18 @@ extension Droplet {
         get("description") { req in return req.description }
         
         try resource("posts", PostController.self)
-        let weatherController = WeatherController(self)
-        get("weather", handler: weatherController.weather)
-//        try resource("weather", WeatherController.self)
-        
         setupWeatherRoutes()
     }
     
     private func setupWeatherRoutes() {
-//        get("weather") { req in
-//            let weatherAPI = WeatherAPIClient(token: "", droplet: self)
-//            return try weatherAPI.weather(with: "")
-//        }
+        guard let appId = self.config["app", "weatherAppId"]?.string else {
+            self.console.error("Missing app id!")
+            self.console.warning("Add one in Config/secrets/app.json")
+            
+            fatalError()
+        }
+        
+        let weatherController = WeatherController(self, appId: appId)
+        get("weather", handler: weatherController.weather)
     }
 }

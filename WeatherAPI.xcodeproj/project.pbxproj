@@ -31,6 +31,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		FF774A2020246FCE00CAA98E /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A1C20246BA300CAA98E /* WeatherController.swift */; };
+		FF774A212024701F00CAA98E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A1E20246CF900CAA98E /* Weather.swift */; };
+		FF774A242024744A00CAA98E /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A232024744A00CAA98E /* WeatherAPIClient.swift */; };
+		FF774A26202481E900CAA98E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF774A25202481E900CAA98E /* Error.swift */; };
 		OBJ_1018 /* PostControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PostControllerTests.swift */; };
 		OBJ_1019 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* RouteTests.swift */; };
 		OBJ_1020 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Utilities.swift */; };
@@ -3564,6 +3568,10 @@
 		"Engine::SMTP::Product" /* SMTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SMTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Engine::URI::Product" /* URI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = URI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Engine::WebSockets::Product" /* WebSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF774A1C20246BA300CAA98E /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		FF774A1E20246CF900CAA98E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FF774A232024744A00CAA98E /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		FF774A25202481E900CAA98E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		"Fluent::Fluent::Product" /* Fluent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fluent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FluentProvider::FluentProvider::Product" /* FluentProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FluentProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JSON::JSON::Product" /* JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4789,10 +4797,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF774A222024743F00CAA98E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF774A232024744A00CAA98E /* WeatherAPIClient.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		OBJ_11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* Post.swift */,
+				FF774A1E20246CF900CAA98E /* Weather.swift */,
+				FF774A25202481E900CAA98E /* Error.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -6764,6 +6782,7 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FF774A222024743F00CAA98E /* Core */,
 				OBJ_9 /* Controllers */,
 				OBJ_11 /* Models */,
 				OBJ_13 /* Routes */,
@@ -6809,6 +6828,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* PostController.swift */,
+				FF774A1C20246BA300CAA98E /* WeatherController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -8161,9 +8181,13 @@
 			files = (
 				OBJ_1162 /* PostController.swift in Sources */,
 				OBJ_1163 /* Post.swift in Sources */,
+				FF774A242024744A00CAA98E /* WeatherAPIClient.swift in Sources */,
+				FF774A2020246FCE00CAA98E /* WeatherController.swift in Sources */,
 				OBJ_1164 /* Routes.swift in Sources */,
 				OBJ_1165 /* Config+Setup.swift in Sources */,
 				OBJ_1166 /* Droplet+Setup.swift in Sources */,
+				FF774A26202481E900CAA98E /* Error.swift in Sources */,
+				FF774A212024701F00CAA98E /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

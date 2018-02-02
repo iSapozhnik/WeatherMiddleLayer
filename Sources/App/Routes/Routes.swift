@@ -1,4 +1,5 @@
 import Vapor
+import Foundation
 
 extension Droplet {
     func setupRoutes() throws {
@@ -21,5 +22,17 @@ extension Droplet {
         get("description") { req in return req.description }
         
         try resource("posts", PostController.self)
+        let weatherController = WeatherController(self)
+        get("weather", handler: weatherController.weather)
+//        try resource("weather", WeatherController.self)
+        
+        setupWeatherRoutes()
+    }
+    
+    private func setupWeatherRoutes() {
+//        get("weather") { req in
+//            let weatherAPI = WeatherAPIClient(token: "", droplet: self)
+//            return try weatherAPI.weather(with: "")
+//        }
     }
 }
